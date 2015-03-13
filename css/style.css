@@ -230,12 +230,15 @@ a.sign-up {
         font-size: 1.375em; /* 30px/16px = 1.875em */
         line-height: 1em;
     }
+
+
     .main-heading {
-        width: 70%;
+        width: 100%;    /*Setting this to 100% and the right/left to auto helps centers it*/
         position: absolute;
         top: 0.75em;
-        right: 5em;
-        padding: 2em;
+        right: auto;
+        left: auto;
+        padding: 0;
     }
 
     a.sign-up {

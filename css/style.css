@@ -69,6 +69,7 @@ img {
 }
 
 .wrapper {
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -86,6 +87,7 @@ img {
 
 #banner {
     display: block;
+    position: relative;
     width: 100%;
 }
 
@@ -96,13 +98,13 @@ img {
     width: 40%;
     position: absolute;
     top: 2em;
-    right: 5em;
+    right: 1em;
 }
 
 h1 {
     font-size: 3.313em;
-    line-height: 52px;
-    padding: 1em 0 0.25em;
+    line-height: 1em; /* 52 / 52 = 1em*/
+    padding: 0.25em 0 0.25em;
     color: #fff;
     text-align: center;
 }
@@ -125,7 +127,7 @@ a.sign-up {
     border: none;
     color: #fff;
     font-weight: bold;
-    max-width: 7.813em;
+    max-width: 8.813em;
     text-decoration: none;
     margin: 0 auto;
     display: block;
@@ -140,6 +142,10 @@ a.sign-up {
 
 }
 
+.mobile-banner-pic {
+    display: none;
+}
+
 
 /* Start of media queries for devices */
 
@@ -150,25 +156,25 @@ a.sign-up {
 
 @media only screen and (max-width: 1024px) {
     /* Ipad Landscape */
-    #banner {
-        font-size: 12px;
+    h1 {
+        font-size: 2.7em; /* 44px/16px = 2.7em */
+        line-height: 1em; /* 44px/44px = 1em*/
     }
 
-    h1 {
-        font-size: 46px;
-        line-height: 42px;
+    .main-heading {
+        top: 0.55em;
     }
 }
 
 @media only screen and (max-width: 800px) {
     /* Tablets */
-    #banner {
-        font-size: 11px;
-    }
 
     h1 {
-        font-size: 42px;
-        line-height: 42px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    a.sign-up {
+        font-size: 1.05em;
     }
 
 }
@@ -176,13 +182,24 @@ a.sign-up {
 @media only screen and (max-width: 768px) {
     /* Ipad Portrait */
 
-    #banner {
-        font-size: 9px;
-    }
 
     h1 {
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 2em; /* 32px/16px = 2em */
+        line-height: 1em; /* 32px/32px = 1em */
+    }
+    .mobile-banner-pic {
+        display: block;
+    }
+
+    .banner-pic {
+        display: none;
+    }
+    .main-heading {
+        width: 70%;
+        position: absolute;
+        top: 3.5em;
+        right: 5em;
+        padding: 2em;
     }
 
 
@@ -190,16 +207,39 @@ a.sign-up {
 
 @media only screen and (max-width: 600px) {
     /* Smaller tablets I.E. - Kindle Fire */
-    #banner {
-        font-size: 8px;
+
+    .main-heading {
+        width: 70%;
+        position: absolute;
+        top: 0.75em;
+        right: 5em;
+        padding: 0;
+    }
+
+
+    h1 {
+        font-size: 1.875em; /* 30px/16px = 1.875em */
+        line-height: 1em;
     }
 
 }
 
 @media only screen and (max-width: 414px) {
     /* Mobile Devices - Iphone 6 and under */
-    #banner {
-        font-size: 7px;
+    h1 {
+        font-size: 1.375em; /* 30px/16px = 1.875em */
+        line-height: 1em;
+    }
+    .main-heading {
+        width: 70%;
+        position: absolute;
+        top: 0.75em;
+        right: 5em;
+        padding: 2em;
+    }
+
+    a.sign-up {
+        font-size: 0.75em;
     }
 
 }

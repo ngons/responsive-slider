@@ -243,6 +243,8 @@ a.sign-up {
 
     a.sign-up {
         font-size: 0.75em;
+        padding: 1.225em 1.250em;
+        max-width: 50%;
     }
 
 }

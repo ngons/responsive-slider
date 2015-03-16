@@ -102,11 +102,12 @@ img {
 }
 
 h1 {
-    font-size: 3.313em;
+    font-size: 3.013em;
     line-height: 1em; /* 52 / 52 = 1em*/
     padding: 0.25em 0 0.25em;
     color: #fff;
     text-align: center;
+    font-weight: bold;
 }
 
 .heart-image {
@@ -117,7 +118,7 @@ h1 {
     display: block;
 }
 
-a.sign-up {
+a.signup {
     background-color: #AB99FB;
     -moz-border-radius: 0.313em;
     -webkit-border-radius: 0.313em;
@@ -133,7 +134,7 @@ a.sign-up {
     display: block;
     letter-spacing: 3px;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 
     -webkit-transition: background-color 0.5s ease 0.1s;
     -moz-transition: background-color 0.5s ease 0.1s;
@@ -144,6 +145,16 @@ a.sign-up {
 
 .mobile-banner-pic {
     display: none;
+}
+
+.charts {
+    display: block;
+}
+
+.chart-one, .chart-two, .chart-three {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 

@@ -56,7 +56,7 @@ table {
 
 body {
     font-size: 100%;
-    font-family: "proxima-nova",sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 img {
@@ -80,9 +80,8 @@ img {
 }
 /* To center the logo, you have to target the img */
 #header img {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+    text-align: left;
+    display: inline;
 }
 
 #banner {
@@ -107,6 +106,14 @@ h1 {
     padding: 0.25em 0 0.25em;
     color: #fff;
     text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.25em;
+    line-height: 1em;
+    padding: 0.25em 0.25em;
+    color: #000;
     font-weight: bold;
 }
 
@@ -152,9 +159,17 @@ a.signup {
 }
 
 .chart-one, .chart-two, .chart-three {
-    width: 33%;
+    width: 32%;
     display: inline-block;
     vertical-align: top;
+}
+
+ol {
+    padding: 0.50em;
+}
+
+li {
+    padding:0.15em;
 }
 
 
@@ -168,12 +183,8 @@ a.signup {
 @media only screen and (max-width: 1024px) {
     /* Ipad Landscape */
     h1 {
-        font-size: 2.7em; /* 44px/16px = 2.7em */
-        line-height: 1em; /* 44px/44px = 1em*/
-    }
-
-    .main-heading {
-        top: 0.55em;
+        font-size: 2.5em;
+        line-height: 1em;
     }
 }
 
@@ -181,11 +192,15 @@ a.signup {
     /* Tablets */
 
     h1 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 2.25em;
+        line-height: 0.85em;
     }
-    a.sign-up {
+    a.signup {
         font-size: 1.05em;
+    }
+
+    .main-heading {
+        top: 2em;
     }
 
 }
@@ -252,7 +267,7 @@ a.signup {
         padding: 0;
     }
 
-    a.sign-up {
+    a.signup {
         font-size: 0.75em;
         padding: 1.225em 1.250em;
         max-width: 50%;

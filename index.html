@@ -15,21 +15,44 @@
 </head>
 <body>
 <div class="container">
-    <div id="header"><img src="http://placehold.it/250x50"></div>
+    <header>
+        <!--<img src="http://placehold.it/250x50">-->
+        <nav id="menu">
+            <ul >
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Blog">Blog</a></li>
+                <li><a href="#" title="Work">Pork Belly</a></li>
+                <li><a href="#" title="Resources">Salami</a></li>
+                <li><a href="#" title="Meta">Prosciutto</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="wrapper">
         <div id="banner">
-            <div class="banner-pic"><img src="http://placehold.it/1000x450"></div>
-            <div class="mobile-banner-pic"><img src="http://placehold.it/768x450"></div>
-            <div class="main-heading">
-                <h1 class="banner-text">Bacon ipsum dolor. Drumstick prosciutto leberkas.</h1>
-                <img class="heart-image" src="http://placehold.it/61x54/000000">
-                <a href="#" title="Sign Up Free" class="signup">Buy This Now</a>
+            <div id="slider-wrapper">
+                <div class="inner-wrapper">
+                    <input checked type="radio" name="slide" class="control" id="Slide1"/>
+                    <label for="Slide1" id="s1"></label>
+                    <input type="radio" name="slide" class="control" id="Slide2"/>
+                    <label for="Slide2" id="s2"></label>
+                    <input type="radio" name="slide" class="control" id="Slide3"/>
+                    <label for="Slide3" id="s3"></label>
+                    <input type="radio" name="slide" class="control" id="Slide4"/>
+                    <label for="Slide4" id="s4"></label>
+                    <div class="overflow-wrapper">
+                        <a class="slide" href=""><img src="http://placehold.it/1000x500"/></a>
+                        <a class="slide" href=""><img src="http://placehold.it/1000x500"/></a>
+                        <a class="slide" href=""><img src="http://placehold.it/1000x500"/></a>
+                        <a class="slide" href=""><img src="http://placehold.it/1000x500"/></a>
+                    </div>
+                </div>
             </div>
         </div>
+        <!--
         <div class="charts">
             <div class="chart-one">
                 <h2>Bacon capicola hamburger</h2>
-                <ol>
+                <ol class="list">
                     <li>beef strip</li>
                     <li>steak</li>
                     <li>filet</li>
@@ -38,7 +61,7 @@
             </div>
             <div class="chart-two">
                 <h2>Pork belly porchetta beef</h2>
-                <ol>
+                <ol class="list">
                     <li>turducken</li>
                     <li>Porchetta</li>
                     <li>shankle</li>
@@ -48,7 +71,7 @@
             </div>
             <div class="chart-three">
                 <h2>Meatball beef ribs</h2>
-                <ol>
+                <ol class="list">
                     <li>Beef</li>
                     <li>ribs</li>
                     <li>sirloin</li>
@@ -58,7 +81,7 @@
             </div>
         </div>
     </div>
-
+       -->
 </div>
 </body>
 </html>
